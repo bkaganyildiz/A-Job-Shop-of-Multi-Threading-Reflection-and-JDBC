@@ -1,0 +1,4 @@
+args = ( "1 R1 "             /* Number and Names of Customer Representatives */ +
+         "1 W1 "             /* Number and Names of Workers                  */ +
+         "1 S1 "             /* Number and Names of Stock Managers           */ +
+         "1 C1 "             /* Number and Names of Customers                */ ).split( "\\s+" ) ;

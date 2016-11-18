@@ -1,0 +1,410 @@
+Representative R1 : (Constructor finished)
+Worker         W1 : (Constructor finished)
+Stock Manager  S1 : (Constructor finished)
+-------------------
+JobShop (Open)    : Time = 08:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:0 >
+>>>> Inventory    : A : 50 , B : 50 , C : 50 , D : 50 , E : 50
+-------------------
+Customer       C1 : (Constructor finished)
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Stock Manager  S1 : Checking for a reported missing part
+Stock Manager  S1 : There are no reported missing parts, so I'm waiting
+Customer       C1 : Submitting a product request of 2 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [001 : |DA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [001 : |DA]
+Worker         W1 : Assembled next part of order [001 : D|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [001 : D|A]
+Worker         W1 : Assembled last part of order [001 : DA|]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 3 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [002 : |ABC]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [002 : |ABC]
+Worker         W1 : Assembled next part of order [002 : A|BC]
+-------------------
+JobShop (Open)    : Time = 08:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:1 , C:1 >
+>>>> Inventory    : A : 48 , B : 50 , C : 50 , D : 49 , E : 50
+-------------------
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [002 : A|BC]
+Worker         W1 : Assembled next part of order [002 : AB|C]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [002 : AB|C]
+Worker         W1 : Assembled last part of order [002 : ABC|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 09:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:2 >
+>>>> Inventory    : A : 48 , B : 49 , C : 49 , D : 49 , E : 50
+-------------------
+-------------------
+JobShop (Open)    : Time = 09:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:2 >
+>>>> Inventory    : A : 48 , B : 49 , C : 49 , D : 49 , E : 50
+-------------------
+-------------------
+JobShop (Open)    : Time = 10:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:2 >
+>>>> Inventory    : A : 48 , B : 49 , C : 49 , D : 49 , E : 50
+-------------------
+-------------------
+JobShop (Open)    : Time = 10:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:2 >
+>>>> Inventory    : A : 48 , B : 49 , C : 49 , D : 49 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [003 : |DDBCC]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [003 : |DDBCC]
+Worker         W1 : Assembled next part of order [003 : D|DBCC]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [003 : D|DBCC]
+Worker         W1 : Assembled next part of order [003 : DD|BCC]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [003 : DD|BCC]
+Worker         W1 : Assembled next part of order [003 : DDB|CC]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [003 : DDB|CC]
+Worker         W1 : Assembled next part of order [003 : DDBC|C]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [003 : DDBC|C]
+Worker         W1 : Assembled last part of order [003 : DDBCC|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 11:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:3 >
+>>>> Inventory    : A : 48 , B : 48 , C : 47 , D : 47 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 4 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [004 : |ACBA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [004 : |ACBA]
+Worker         W1 : Assembled next part of order [004 : A|CBA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [004 : A|CBA]
+Worker         W1 : Assembled next part of order [004 : AC|BA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [004 : AC|BA]
+Worker         W1 : Assembled next part of order [004 : ACB|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [004 : ACB|A]
+Worker         W1 : Assembled last part of order [004 : ACBA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [005 : |DDADB]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [005 : |DDADB]
+Worker         W1 : Assembled next part of order [005 : D|DADB]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [005 : D|DADB]
+Worker         W1 : Assembled next part of order [005 : DD|ADB]
+-------------------
+JobShop (Open)    : Time = 11:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:1 , C:4 >
+>>>> Inventory    : A : 46 , B : 47 , C : 46 , D : 45 , E : 50
+-------------------
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [005 : DD|ADB]
+Worker         W1 : Assembled next part of order [005 : DDA|DB]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [005 : DDA|DB]
+Worker         W1 : Assembled next part of order [005 : DDAD|B]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [005 : DDAD|B]
+Worker         W1 : Assembled last part of order [005 : DDADB|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 4 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [006 : |ADBA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [006 : |ADBA]
+Worker         W1 : Assembled next part of order [006 : A|DBA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [006 : A|DBA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Assembled next part of order [006 : AD|BA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [006 : AD|BA]
+Worker         W1 : Assembled next part of order [006 : ADB|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [006 : ADB|A]
+Worker         W1 : Assembled last part of order [006 : ADBA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 3 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [007 : |CDA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [007 : |CDA]
+Worker         W1 : Assembled next part of order [007 : C|DA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [007 : C|DA]
+Worker         W1 : Assembled next part of order [007 : CD|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [007 : CD|A]
+Worker         W1 : Assembled last part of order [007 : CDA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 12:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:7 >
+>>>> Inventory    : A : 42 , B : 45 , C : 45 , D : 42 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 2 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [008 : |DB]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [008 : |DB]
+Worker         W1 : Assembled next part of order [008 : D|B]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [008 : D|B]
+Worker         W1 : Assembled last part of order [008 : DB|]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 12:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:8 >
+>>>> Inventory    : A : 42 , B : 44 , C : 45 , D : 41 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 4 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [009 : |ADCC]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [009 : |ADCC]
+Worker         W1 : Assembled next part of order [009 : A|DCC]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [009 : A|DCC]
+Worker         W1 : Assembled next part of order [009 : AD|CC]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [009 : AD|CC]
+Worker         W1 : Assembled next part of order [009 : ADC|C]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [009 : ADC|C]
+Worker         W1 : Assembled last part of order [009 : ADCC|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 13:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:9 >
+>>>> Inventory    : A : 41 , B : 44 , C : 43 , D : 40 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 3 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [010 : |BAA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [010 : |BAA]
+Worker         W1 : Assembled next part of order [010 : B|AA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [010 : B|AA]
+Worker         W1 : Assembled next part of order [010 : BA|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [010 : BA|A]
+Worker         W1 : Assembled last part of order [010 : BAA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 13:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:10 >
+>>>> Inventory    : A : 39 , B : 43 , C : 43 , D : 40 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [011 : |ADBBA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [011 : |ADBBA]
+Worker         W1 : Assembled next part of order [011 : A|DBBA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [011 : A|DBBA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Assembled next part of order [011 : AD|BBA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [011 : AD|BBA]
+Worker         W1 : Assembled next part of order [011 : ADB|BA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [011 : ADB|BA]
+Worker         W1 : Assembled next part of order [011 : ADBB|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [011 : ADBB|A]
+Worker         W1 : Assembled last part of order [011 : ADBBA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 14:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:11 >
+>>>> Inventory    : A : 37 , B : 41 , C : 43 , D : 39 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [012 : |DABDD]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [012 : |DABDD]
+Worker         W1 : Assembled next part of order [012 : D|ABDD]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [012 : D|ABDD]
+Worker         W1 : Assembled next part of order [012 : DA|BDD]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [012 : DA|BDD]
+Worker         W1 : Assembled next part of order [012 : DAB|DD]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [012 : DAB|DD]
+Worker         W1 : Assembled next part of order [012 : DABD|D]
+-------------------
+JobShop (Open)    : Time = 14:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:1 , C:11 >
+>>>> Inventory    : A : 36 , B : 40 , C : 43 , D : 37 , E : 50
+-------------------
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [012 : DABD|D]
+Worker         W1 : Assembled last part of order [012 : DABDD|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [013 : |ABDAA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [013 : |ABDAA]
+Worker         W1 : Assembled next part of order [013 : A|BDAA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [013 : A|BDAA]
+Worker         W1 : Assembled next part of order [013 : AB|DAA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [013 : AB|DAA]
+Worker         W1 : Assembled next part of order [013 : ABD|AA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [013 : ABD|AA]
+Worker         W1 : Assembled next part of order [013 : ABDA|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [013 : ABDA|A]
+Worker         W1 : Assembled last part of order [013 : ABDAA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [014 : |ABBAA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [014 : |ABBAA]
+Worker         W1 : Assembled next part of order [014 : A|BBAA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [014 : A|BBAA]
+Worker         W1 : Assembled next part of order [014 : AB|BAA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [014 : AB|BAA]
+Worker         W1 : Assembled next part of order [014 : ABB|AA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [014 : ABB|AA]
+Worker         W1 : Assembled next part of order [014 : ABBA|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [014 : ABBA|A]
+Worker         W1 : Assembled last part of order [014 : ABBAA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 15:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:14 >
+>>>> Inventory    : A : 30 , B : 37 , C : 43 , D : 35 , E : 50
+-------------------
+-------------------
+JobShop (Open)    : Time = 15:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:14 >
+>>>> Inventory    : A : 30 , B : 37 , C : 43 , D : 35 , E : 50
+-------------------
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [015 : |BBDBB]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [015 : |BBDBB]
+Worker         W1 : Assembled next part of order [015 : B|BDBB]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [015 : B|BDBB]
+Representative R1 : Checking for a standing product request
+Worker         W1 : Assembled next part of order [015 : BB|DBB]
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [015 : BB|DBB]
+Worker         W1 : Assembled next part of order [015 : BBD|BB]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [015 : BBD|BB]
+Worker         W1 : Assembled next part of order [015 : BBDB|B]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [015 : BBDB|B]
+Worker         W1 : Assembled last part of order [015 : BBDBB|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 2 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [016 : |CC]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [016 : |CC]
+Worker         W1 : Assembled next part of order [016 : C|C]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [016 : C|C]
+Worker         W1 : Assembled last part of order [016 : CC|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+Customer       C1 : Submitting a product request of 5 parts
+Representative R1 : Checking for a standing product request
+Representative R1 : I am adding a new order [017 : |ABBAA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [017 : |ABBAA]
+Worker         W1 : Assembled next part of order [017 : A|BBAA]
+Representative R1 : Checking for a standing product request
+Representative R1 : There are no product requests, so I'm waiting
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [017 : A|BBAA]
+Worker         W1 : Assembled next part of order [017 : AB|BAA]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [017 : AB|BAA]
+Worker         W1 : Assembled next part of order [017 : ABB|AA]
+-------------------
+JobShop (Open)    : Time = 16:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:1 , C:16 >
+>>>> Inventory    : A : 29 , B : 31 , C : 41 , D : 34 , E : 50
+-------------------
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [017 : ABB|AA]
+Worker         W1 : Assembled next part of order [017 : ABBA|A]
+Worker         W1 : Checking for a working order
+Worker         W1 : Currently working on order [017 : ABBA|A]
+Worker         W1 : Assembled last part of order [017 : ABBAA|]
+Worker         W1 : Checking for a working order
+Worker         W1 : There are no working orders, so I'm waiting
+-------------------
+JobShop (Open)    : Time = 16:30 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:17 >
+>>>> Inventory    : A : 27 , B : 31 , C : 41 , D : 34 , E : 50
+-------------------
+-------------------
+JobShop (Closed)  : Time = 17:00 , Employees = < R:1 , W:1 , S:1 > , Orders = < R:0 , W:0 , C:17 >
+>>>> Inventory    : A : 27 , B : 31 , C : 41 , D : 34 , E : 50
+-------------------
+Representative R1 : Processed a total of 17 product requests
+Stock Manager  S1 : Restocked a total of 0 parts
+Worker         W1 : Assembled a total of 67 parts
+Customer       C1 : Submitted a total of 17 product requests to the jobshop
